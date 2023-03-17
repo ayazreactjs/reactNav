@@ -1,0 +1,8 @@
+@mixin flex($fdir: column, $jContent: center) {
+  display: flex;
+  flex-direction: $fdir;
+  justify-content: $jContent;
+  align-items: center;
+}
+$backGround: #ff33ff;
+$textColor: #f5f5f5;

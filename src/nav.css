@@ -1,0 +1,101 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #ff33ff;
+}
+
+.navCenter {
+  display: flex;
+  flex-direction: column;
+}
+
+.navHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.logo {
+  color: #f5f5f5;
+}
+
+.toggle {
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+.navLinks {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links li {
+  list-style: none;
+}
+
+.myLink {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.navLinks.showLinks {
+  height: auto;
+  overflow: visible;
+} */
+// import './nav.css'
+// import { Link } from 'react-router-dom'
+// import { GiHamburgerMenu } from 'react-icons/gi'
+// import { navdata } from './navdata'
+// import React, { useState } from 'react'
+
+// const Nav = () => {
+//   const [showLinks, setShowLinks] = useState(false)
+
+//   const handleToggle = () => {
+//     setShowLinks(!showLinks)
+//   }
+
+//   return (
+//     <nav>
+//       <div className="navCenter">
+//         <div className="navHeader">
+//           <div className="logo">LOGO</div>
+//           <div className="toggle" onClick={handleToggle}>
+//             <GiHamburgerMenu />
+//           </div>
+//         </div>
+//         <div className={`navLinks ${showLinks ? 'showLinks' : ''}`}>
+//           <div className="links">
+//             {navdata.map((link) => {
+//               const { id, url, text } = link
+//               return (
+//                 <li key={id}>
+//                   <Link to={url} className="myLink">
+//                     {text}
+//                   </Link>
+//                 </li>
+//               )
+//             })}
+//           </div>
+//         </div>
+//       </div>
+//     </nav>
+//   )
+// }
+
+// export default Nav

@@ -1,0 +1,64 @@
+nav {
+  background-color: $backGround;
+
+  .navCenter {
+    .navHeader {
+      @include flex(row, space-between);
+      height: 75px;
+      padding: 0 25px 0 25px;
+      .logo {
+        color: $textColor;
+      }
+      .toggle {
+        color: $textColor;
+        cursor: pointer;
+      }
+    }
+    .navLinks {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.05s ease-in-out;
+
+      .links {
+        @include flex(column, center);
+        li {
+          list-style: none;
+
+          .myLink {
+            color: $textColor;
+            text-decoration: none;
+            // ActiveLink
+            &.activeLink {
+              font-size: 30px;
+              transition: all 0.05s ease-in-out;
+            }
+          }
+        }
+      }
+      &.showLinks {
+        height: 75px;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  nav {
+    .navCenter {
+      @include flex(row, space-between);
+      .navHeader {
+        .toggle {
+          display: none;
+        }
+      }
+      .navLinks {
+        height: auto !important;
+        .links {
+          @include flex(row, center);
+          gap: 10px;
+          padding-right: 25px;
+        }
+      }
+    }
+  }
+}

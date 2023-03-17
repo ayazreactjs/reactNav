@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #ff33ff;
+}
+nav .navCenter .navHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 25px 0 25px;
+}
+nav .navCenter .navHeader .logo {
+  color: #f5f5f5;
+}
+nav .navCenter .navHeader .toggle {
+  color: #f5f5f5;
+  cursor: pointer;
+}
+nav .navCenter .navLinks {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.05s ease-in-out;
+}
+nav .navCenter .navLinks .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .navCenter .navLinks .links li {
+  list-style: none;
+}
+nav .navCenter .navLinks .links li .myLink {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+nav .navCenter .navLinks .links li .myLink.activeLink {
+  font-size: 30px;
+  transition: all 0.05s ease-in-out;
+}
+nav .navCenter .navLinks.showLinks {
+  height: 75px;
+}
+
+@media (min-width: 800px) {
+  nav .navCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .navCenter .navHeader .toggle {
+    display: none;
+  }
+  nav .navCenter .navLinks {
+    height: auto !important;
+  }
+  nav .navCenter .navLinks .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-right: 25px;
+  }
+}/*# sourceMappingURL=styles.css.map */
