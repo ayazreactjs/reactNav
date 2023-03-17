@@ -9,7 +9,13 @@ const Project1 = () => {
         height: '100%',
       }}
     >
-      <p style={{ textAlign: 'justify', width: '320px' }}>
+      <p
+        style={{
+          textAlign: 'justify',
+          width: '90%',
+          maxWidth: '500px',
+        }}
+      >
         This is a simple responsive navbar built with React.js and styled with
         Sass. To create the flexbox layout, Sass mixins were used, as well as
         Sass variables to define common styles. The navbar features a hamburger
@@ -20,6 +26,13 @@ const Project1 = () => {
         useEffect and useRef hooks to detect clicks outside of the nav element
         in responsive screens. Overall, this navbar provides a clean and user-
         friendly navigation experience for users on any device.
+        <a
+          href="https://github.com/ayazreactjs/reactNav"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          myCode
+        </a>
       </p>
     </div>
   )
