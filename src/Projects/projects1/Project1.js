@@ -18,8 +18,8 @@ const Project1 = () => {
         onClick function to each link. Additionally, the navbar will close if
         the user clicks outside of the nav element. This was achieved using the
         useEffect and useRef hooks to detect clicks outside of the nav element
-        in responsive screens. Overall, this navbar provides a clean and
-        user-friendly navigation experience for users on any device.
+        in responsive screens. Overall, this navbar provides a clean and user-
+        friendly navigation experience for users on any device.
       </p>
     </div>
   )
